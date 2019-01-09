@@ -3,8 +3,8 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Parker Jordan.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -31,9 +31,13 @@ def double_a_float():
          -6.28
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    float_2 = float(input("Listen here pal, enter a float: "))
+    answer = float_2 * 2
+    print(answer)
 
 
 def print_an_integer_many_times():
@@ -62,9 +66,13 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    int_many_times = int(input("Could you do me a solid and enter an integer: "))
+    for k in range(int_many_times):
+        print(int_many_times * 2)
 
 
 def print_an_integer_many_times_on_one_row():
@@ -81,12 +89,17 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
+
+    int_many_times_str = int(input("How about another one?: "))
+
+    big_str = int_many_times_str * str(int_many_times_str * 2)
+    print(big_str)
 
 
 def input_it_all():
@@ -121,9 +134,18 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    import math
+    float_ = float(input("Alright, I've got a big finish for you... Give me a float: "))
+    integer = int(input("An integer: "))
+    string = input("Lastly, a string: ")
+    for _ in range(integer):
+        print(math.sqrt(float_))
+
+    for _ in range(integer):
+        print(string)
 
 
 # -----------------------------------------------------------------------------
